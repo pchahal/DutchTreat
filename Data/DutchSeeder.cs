@@ -27,7 +27,7 @@ namespace DutchTreat.Data
 
       if (!_ctx.Products.Any())
       {
-        // Need to create the Sample Data
+        // Need to create the Sample Data test
         var file = Path.Combine(_hosting.ContentRootPath, "Data/art.json");
         var json = File.ReadAllText(file);
         var products = JsonSerializer.Deserialize<IEnumerable<Product>>(json);
